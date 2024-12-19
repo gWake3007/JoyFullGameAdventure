@@ -1,0 +1,49 @@
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+.policy-body {
+  background-color: #3b6fd9;
+}
+.policy-container {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #f1f1f1;
+}
+.back-btn {
+  border-radius: 10px;
+  padding: 8px 16px;
+  width: 146px;
+  height: 34px;
+  background: linear-gradient(180deg, #f2bf27 0%, #e8a51c 67.5%, #d97c0b 100%);
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #161616;
+}
+.policy-title-main {
+  font-family: 'Lilita One', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #f1f1f1;
+}
+.policy-title {
+  font-family: 'Lilita One', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #f1f1f1;
+}
+.policy-info-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.privacy-list {
+  list-style-type: disc;
+  padding-right: 10px;
+  padding-left: 30px;
+}
