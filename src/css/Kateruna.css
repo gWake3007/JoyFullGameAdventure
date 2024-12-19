@@ -21,14 +21,11 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
+  text-align: right;
 }
 .footer-text {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.5;
-  text-align: center;
-}
-.footer-privacy {
-  margin-bottom: 16px;
-  margin-left: 41px;
+  text-align: right;
 }
