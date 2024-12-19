@@ -3,7 +3,6 @@ import glob from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
-import { globalStylesOptions } from './global.styles';
 
 export default defineConfig(({ command }) => {
   return {
@@ -46,12 +45,5 @@ export default defineConfig(({ command }) => {
         },
       }),
     ],
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: globalStylesOptions,
-        },
-      },
-    },
   };
 });
