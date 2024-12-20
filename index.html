@@ -15,7 +15,9 @@
     />
     
     <script type="module" crossorigin src="/vanilla-vite-template/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/vanilla-vite-template/assets/index-c5cd4b7f.css">
+    <link rel="modulepreload" crossorigin href="/vanilla-vite-template/assets/vendor-58205fe0.js">
+    <link rel="stylesheet" href="/vanilla-vite-template/assets/vendor-1f9fe898.css">
+    <link rel="stylesheet" href="/vanilla-vite-template/assets/index-e44f9dfc.css">
   </head>
   <body class="background">
     <header class="header container">
@@ -120,13 +122,101 @@
 </section>
 
     <section class="gallery">
-  <h2>1</h2>
+  <div class="gallery-container container">
+    <h2 class="gallery-title">Gallery</h2>
+    <div class="swiper">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <img
+            class="gallery-section"
+            src="../img/gallery/photo 1_1x.png"
+            srcset="../img/gallery/photo 1_1x.png, 
+        ../img/gallery/photo 1_2x.png"
+            alt="finish-level-img"
+            loading="lazy"
+          />
+        </li>
+        <li class="swiper-slide">
+          <img
+            class="gallery-section"
+            src="../img/gallery/photo2_1x.png"
+            srcset="../img/gallery/photo2_1x.png, ../img/gallery/photo2_2x.png"
+            alt="star-chest-img"
+            loading="lazy"
+          />
+        </li>
+        <li class="swiper-slide">
+          <img
+            class="gallery-section"
+            src="../img/gallery/photo3_1x.png"
+            srcset="../img/gallery/photo3_1x.png, ../img/gallery/photo3_2x.png"
+            alt="team-img"
+            loading="lazy"
+          />
+        </li>
+        <li class="swiper-slide">
+          <img
+            class="gallery-section"
+            src="../img/gallery/photo4_1x.png"
+            srcset="../img/gallery/photo4_1x.png, ../img/gallery/photo4_2x.png"
+            alt="start-level-img"
+            loading="lazy"
+          />
+        </li>
+        <li class="swiper-slide">
+          <img
+            class="gallery-section"
+            src="../img/gallery/photo5_1x.png"
+            srcset="../img/gallery/photo5_1x.png, ../img/gallery/photo5_2x.png"
+            alt="play-level-img"
+            loading="lazy"
+          />
+        </li>
+        <li class="swiper-slide">
+          <img
+            class="gallery-section"
+            src="../img/gallery/photo6_1x.png"
+            srcset="../img/gallery/photo6_1x.png, ../img/gallery/photo6_2x.png"
+            alt="game-img"
+            loading="lazy"
+          />
+        </li>
+      </ul>
+      <div class="custom-slider">
+        <div class="custom-pagination">
+          <div class="pagination-item active" style="background: orange"></div>
+          <div class="pagination-item" style="background: yellow"></div>
+          <div class="pagination-item" style="background: yellow"></div>
+          <div class="pagination-item" style="background: yellow"></div>
+          <div class="pagination-item" style="background: yellow"></div>
+        </div>
+      </div>
+
+      <div class="custom-navigation">
+        <button class="custom-arrow custom-prev" aria-label="Previous slide">
+          <svg class="arrow" width="40" height="40" aria-hidden="true">
+            <use href="../img/icons/sprites.svg#arrow-left"></use>
+          </svg>
+        </button>
+
+        <button class="custom-arrow custom-next" aria-label="Previous slide">
+          <svg class="arrow" width="40" height="40" aria-hidden="true">
+            <use href="../img/icons/sprites.svg#arrow-left"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="swiper-scrollbar"></div>
+    </div>
+  </div>
 </section>
-<section class="faq">
+<section class="faq container">
   <h2>2</h2>
 </section>
+
+<!-- //////////////////////////------footer-------------//////// -->
 <footer class="footer">
-  <div class="footer-container">
+  <div class="footer-container container">
     <ul class="footer-navigation">
       <li class="footer-privacy">
         <a href="Privacy%20Policy.html" target="_blank">Privacy Policy /</a>
