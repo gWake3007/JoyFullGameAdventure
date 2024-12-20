@@ -1,10 +1,9 @@
 :root {
-  --yellow: yellow;
-  --blue: blue;
-  --darkBlue: darkblue;
-  --orange: orange;
-  --white: white;
-  --black: black;
+  --blue: #29b9f2;
+  --darkBlue: #3b6fd9;
+  --orange: #d97c0b;
+  --white: #f1f1f1;
+  --black: #161616;
 }
 
 body {
@@ -37,5 +36,5 @@ body {
 
 /* BACKGROUND COLOR SECTION */
 .background {
-  background-color: var(--blue);
+  background-color: var(--darkBlue);
 }
