@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="JoyFullgGameAdventure" />
-    <link rel="icon" type="image/svg+xml" href="/vanilla-vite-template/assets/Favicon-aef04d2d.svg" />
+    <link rel="icon" type="image/svg+xml" href="/JoyFullGameAdventure/assets/Favicon-aef04d2d.svg" />
     <title>JoyFullgGameAdventure</title>
     <link
       rel="stylesheet"
@@ -14,12 +14,12 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/vanilla-vite-template/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/vanilla-vite-template/assets/vendor-58205fe0.js">
-    <link rel="stylesheet" href="/vanilla-vite-template/assets/vendor-1f9fe898.css">
-    <link rel="stylesheet" href="/vanilla-vite-template/assets/index-2c75fc92.css">
+    <script type="module" crossorigin src="/JoyFullGameAdventure/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/JoyFullGameAdventure/assets/vendor-58205fe0.js">
+    <link rel="stylesheet" href="/JoyFullGameAdventure/assets/vendor-1f9fe898.css">
+    <link rel="stylesheet" href="/JoyFullGameAdventure/assets/index-11c483da.css">
   </head>
-  <body class="background image">
+  <body class="background">
     <header class="header container">
   <a href="index.html" class="link-logo">
     <img
@@ -49,12 +49,21 @@
   </nav>
 </header>
 <section class="hero container" id="Home">
-  <h1>Match Triple 3D</h1>
-  <h2>
-    Match, Solve, and Explore in <br />
-    a Stunning 3D Puzzle World!
-  </h2>
-  <button type="button">Google Play</button>
+  <div class="hero-container">
+    <div class="hero-text-box">
+      <h1 class="title">Match Triple 3D</h1>
+      <h2 class="sub-title">
+        Match, Solve, and Explore in <br />
+        a Stunning 3D Puzzle World!
+      </h2>
+    </div>
+    <div class="hero-btn">
+      <svg class="google-svg">
+        <use href="../img/icons/sprites.svg#google"></use>
+      </svg>
+      <a href="#" class="btn-google">Google Play</a>
+    </div>
+  </div>
 </section>
 <section class="about" id="About">
   <div class="container">
