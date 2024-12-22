@@ -7,10 +7,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const swiper = new Swiper('.swiper', {
         modules: [Navigation],
-        slidesPerView: 1.5,
+        breakpoints: {
+            320: {
+                slidesPerView: 1.5,
+                spaceBetween: 15,
+            },
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1400: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+        },
         centeredSlides: true,
         loop: true,
-        spaceBetween: 5,
+
 
         navigation: {
             nextEl: '.custom-next',
