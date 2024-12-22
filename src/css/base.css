@@ -30,7 +30,7 @@ body {
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    padding: 0 77px;
+    padding: 0 72px;
   }
 }
 
