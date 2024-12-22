@@ -38,7 +38,7 @@
 /* Hero */
 
 .hero {
-  background-image: url(../img/Image\ 1_1x.png);
+  background-image: url(/img/Image\ 1_1x.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -48,7 +48,7 @@
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .hero {
-    background-image: url(../img/Image\ 1_2x.png);
+    background-image: url(/img/Image\ 1_2x.png);
   }
 }
 
@@ -109,7 +109,7 @@
 /* About */
 .about {
   border: 7px solid var(--orange);
-  border-radius: 50px;
+  border-radius: 100px;
   overflow: hidden;
 }
 
@@ -123,7 +123,7 @@
 .background-container {
   width: 1140px;
   height: 484px;
-  background-image: url(../img/Image\ 2_1x.png);
+  background-image: url(/img/Image\ 2_1x.png);
   background-position: bottom -17px right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -131,7 +131,7 @@
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .background-container {
-    background-image: url(../img/Image\ 2_2x.png);
+    background-image: url(/img/Image\ 2_2x.png);
   }
 }
 
@@ -151,6 +151,49 @@
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
+  line-height: 1.5;
+  color: var(--black);
+}
+
+/* Benefits */
+
+.benefits {
+  padding: 90px 72px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.benefits-item {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 426px;
+  height: 203px;
+  padding: 22px 20px;
+  border: 7px solid var(--orange);
+  border-radius: 30px;
+  background-color: var(--white);
+  overflow: hidden;
+}
+
+.benefits-title {
+  font-family: 'Lilita One', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--black);
+}
+
+.benefits-text {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 1.5;
   color: var(--black);
 }
