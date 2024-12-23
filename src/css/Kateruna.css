@@ -6,6 +6,7 @@
   border: 4px solid #d97c0b;
   border-radius: 30px;
 }
+
 .gallery-title {
   text-align: center;
   margin-top: 36px;
@@ -103,11 +104,13 @@
 @media screen and (min-width: 1200px) {
   .gallery-title {
     font-size: 38px;
+    margin-top: 0;
   }
   .gallery-swiper-wrapper {
     width: 1056px;
     height: 594px;
   }
+
   .gallery-section {
     width: 100%;
     height: auto;
