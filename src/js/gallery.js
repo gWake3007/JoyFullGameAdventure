@@ -4,13 +4,12 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 document.addEventListener('DOMContentLoaded', function () {
-
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('.gallery-swiper', {
         modules: [Navigation],
         breakpoints: {
             320: {
                 slidesPerView: 1.5,
-                spaceBetween: 15,
+                spaceBetween: 10,
             },
             1200: {
                 slidesPerView: 3,
@@ -18,18 +17,16 @@ document.addEventListener('DOMContentLoaded', function () {
             },
             1400: {
                 slidesPerView: 3,
-                spaceBetween: 20,
+                spaceBetween: 10,
             },
         },
         centeredSlides: true,
         loop: true,
 
-
         navigation: {
             nextEl: '.custom-next',
             prevEl: '.custom-prev',
         },
-
 
         on: {
             reachBeginning: function () {
@@ -42,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 const activeIndex = this.realIndex;
                 const items = document.querySelectorAll('.pagination-item');
 
-
                 items.forEach((item, index) => {
                     if (index === activeIndex) {
                         item.classList.add('active');
@@ -52,13 +48,5 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
             },
         },
-    });
-
-
-    const paginationItems = document.querySelectorAll('.pagination-item');
-    paginationItems.forEach((item, index) => {
-        item.addEventListener('click', () => {
-            swiper.slideToLoop(index);
-        });
     });
 });
