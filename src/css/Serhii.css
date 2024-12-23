@@ -1,4 +1,57 @@
 .header {
+  position: fixed;
+  top: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+.nav-bar {
+  background-color: rgba(41, 185, 242, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  padding: 4px;
+}
+
+.link-logo {
+  display: none;
+}
+
+.link-logo-mobile {
+  width: 32px;
+  height: 32px;
+}
+
+.menu-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.header-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  fill: var(--white);
+  stroke: var(--white);
+}
+
+.list-bar {
+  display: none;
+}
+
+.modal {
+  display: none;
 }
 
 @media screen and (min-width: 1200px) {
@@ -23,6 +76,14 @@
     width: 952px;
   }
 
+  .link-logo-mobile {
+    display: none;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
   .list-bar {
     display: flex;
     flex-direction: row;
@@ -41,7 +102,76 @@
 }
 
 /* Hero */
+.hero {
+  background-image: url('/img/Image1_1x.png');
+  background-repeat: no-repeat;
+  background-position: top left -50px;
+  background-size: 616.5px 404.5px;
+  padding: 118.5px 20px 118.5px 20px;
+  overflow: visible;
+}
 
+.hero-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.title {
+  font-family: 'Lilita One', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 1.5;
+}
+
+.sub-title {
+  font-family: 'Lilita One', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.sub-title-hero {
+  font-family: 'Lilita One', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.hero-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero-btn {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-radius: 10px;
+  padding: 8px 16px;
+  width: 133px;
+  height: 34px;
+  background: linear-gradient(180deg, #f2bf27 0%, #e8a51c 67.5%, #d97c0b 100%);
+}
+
+.google-svg {
+  width: 16px;
+  height: 18px;
+}
+
+.btn-google {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--black);
+}
 @media screen and (min-width: 1200px) {
   .hero {
     background-image: url('/img/Image1_1x.png');
@@ -67,6 +197,14 @@
   }
 
   .sub-title {
+    font-family: 'Lilita One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1.5;
+  }
+
+  .sub-title-hero {
     font-family: 'Lilita One', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -118,6 +256,49 @@
 }
 
 /* About */
+.about {
+  background-image: url('/img/Image2_1x.png');
+  background-position: bottom -5px right -15px;
+  background-repeat: no-repeat;
+  background-size: 570px 242px;
+  margin: 0 auto;
+  width: 320px;
+  border: 4px solid var(--orange);
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: var(--blue);
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding-top: 36px;
+}
+
+.background-container {
+  padding-bottom: 298px;
+}
+
+.text-about-container {
+  margin-top: 48px;
+  width: 280px;
+  height: 310px;
+  border: 2px solid var(--orange);
+  border-radius: 40px;
+  overflow: hidden;
+  background-color: var(--white);
+}
+
+.text-about {
+  padding: 18px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--black);
+}
 @media screen and (min-width: 1200px) {
   .about {
     margin: 0 auto;
@@ -172,6 +353,20 @@
 
 /* Benefits */
 
+.benefits {
+  padding-top: 48px;
+  background-image: url('/img/Image3_1x.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 600px 394px;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 @media screen and (min-width: 1200px) {
   .benefits {
     padding-top: 90px;
