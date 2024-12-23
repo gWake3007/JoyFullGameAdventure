@@ -22,6 +22,9 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         centeredSlides: true,
         loop: true,
+        slideClass: 'gallery-swiper-slide',
+        wrapperClass: 'gallery-swiper-wrapper',
+        direction: 'horizontal',
 
         navigation: {
             nextEl: '.custom-next',
