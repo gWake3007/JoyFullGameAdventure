@@ -12,12 +12,10 @@ window.addEventListener('scroll', blurHeader);
 
 function openModal() {
   modalMenu.style.display = 'block';
-  modalMenu.classList.toggle('open');
 }
 
 function closeModal(e) {
   modalMenu.style.display = 'none';
-  modalMenu.classList.toggle('open');
 }
 
 function blurHeader() {
