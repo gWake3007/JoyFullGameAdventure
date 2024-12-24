@@ -94,16 +94,22 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
+  color: #f1f1f1;
   text-align: right;
 }
 .footer-text {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 9px;
   line-height: 1.5;
-  text-align: right;
+  text-align: center;
+  margin-left: 20px;
+
+  color: #f1f1f1;
 }
 
 @media screen and (min-width: 1200px) {
