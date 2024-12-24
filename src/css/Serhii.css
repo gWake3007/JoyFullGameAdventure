@@ -60,9 +60,11 @@
   }
 
   .header {
+    min-width: 1200px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
-    gap: 14px;
+    gap: 24px;
     position: fixed;
     top: 24px;
     left: 50%;
